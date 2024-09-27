@@ -8,7 +8,7 @@ filepath = './data/courses-full.json'
 with open(filepath, 'r') as file:
     json_string = file.read()
     dict_of_courses = json.loads(json_string)
-    print(dict_of_courses)
+    # print(dict_of_courses)
 
 # Extract the value of the `dict_of_courses` dictionary
 # If you are not sure what the dictionary looks like, you can print it out

@@ -107,7 +107,7 @@ def generate_response_based_on_course_details(user_message, product_details):
     Step 2:{delimiter} <step 2 reasoning>
     Step 3:{delimiter} <step 3 response to customer>
 
-    Make sure to include {delimiter} to separate every step.
+    Make sure to include {delimiter} to separate every step. And does not end with {delimiter}
     """
 
     messages =  [
@@ -127,7 +127,7 @@ def process_user_message(user_input):
 
     # Process 1: If Courses are found, look them up
     category_n_course_name = identify_category_and_courses(user_input)
-    print("category_n_course_name : ", category_n_course_name)
+    # print("category_n_course_name : ", category_n_course_name)
 
     # Process 2: Get the Course Details
     course_details = get_course_details(category_n_course_name)
